@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- --------------Header Start--------------- -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1><span>S</span>URAJ.</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-txt">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Suraj Mourya</span><br> from India.</h1>
+            </div>
+        </div>
+    </header>
+    <!-- --------------Header End--------------- -->
+
+    <!-- --------------About Start--------------- -->
+    <div class="about" id="aboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/picwish (1).png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p class="abt-me">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat atque natus
+                        dolorum soluta qui iure quam ex omnis ullam, excepturi reprehenderit laudantium hic, mollitia
+                        reiciendis laboriosam, a vel at facilis.</p>
+                    <div class="col-2-tab">
+                        <p class="tab-title active-title" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-title" onclick="opentab('education')">Education</p>
+                        <p class="tab-title" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>
+                                <span>Web Interface.</span>
+                            </li>
+                            <li><span>Editing</span><br>Video Editing/Photo Editing.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Pursuing</span><br>M.Tech from BITS PILANI</li>
+                            <li><span>2022</span><br>BSC from Guru Nanak Khalsa College of Arts, Science and Commerce.
+                            </li>
+                            <li><span>2019</span><br>HSC from Sainath English High School & Junior College</li>
+                            <li><span>2017</span><br>SSC from Sainath English High School & Junior College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Wipro</span><br>Working as Developer I</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------About End--------------- -->
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
