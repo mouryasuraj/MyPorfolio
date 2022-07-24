@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,800;1,900&family=Ubuntu:ital,wght@0,700;1,700&display=swap');
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -106,6 +108,11 @@ header {
 .row .about-col-1 img {
     width: 100%;
     border-radius: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.row .about-col-1 img:hover{
+    transform: scale(1.02);
 }
 
 .row .about-col-2 {
@@ -162,6 +169,7 @@ header {
     width: fit-content;
     padding: 5px 15px;
     display: none;
+    background-color: rgb(18, 18, 18);
 }
 
 .tab-contents ul li {
@@ -179,3 +187,69 @@ header {
 
 
 /* -------------------About End----------------------- */
+
+/* -------------------Service Start----------------------- */
+
+#services .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+#services .services-list div{
+    background-color: rgb(50, 50, 50);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#services .services-list div:hover{
+    background-color: #000000;
+    transform: scale(1.03);
+}
+#services .services-list div i{
+    font-size: 45px;
+    color: #9d9d9d;
+}
+#services .services-list div h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+#services .services-list div p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#services .services-list div a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+#services .container h1{
+    position: relative;
+    cursor: pointer;
+    color: #ff6565;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+
+
+
+/* -------------------Services End----------------------- */
+
+footer{
+    padding: 10px 10%;
+}
+footer a{
+    border: 1px solid rgb(81, 80, 80);
+    color: black;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}

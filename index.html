@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
+    <link rel="shortcut icon" href="./images/portfolio (1).png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
+<body id="home">
     <!-- --------------Header Start--------------- -->
     <header>
         <div class="container">
@@ -21,7 +23,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#aboutMe">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -43,7 +45,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1>About me</h1>
-                    <p class="abt-me">I'm Suraj Mourya. I belongs to Uttar Pradesh but Currently living in Mumbai. I'm 21 Years Old. I love doing coding. I want to make My career as Web Developer. I'm an experienced Web Delevoper who constantly seeks out innovative solutions to everyday problems.</p>
+                    <p class="abt-me">I'm Suraj Mourya. I belongs to Uttar Pradesh but Currently living in Mumbai. I'm
+                        21 Years Old. I love doing coding. I want to make My career as Web Developer. I'm an experienced
+                        Web Delevoper who constantly seeks out innovative solutions to everyday problems.</p>
                     <div class="col-2-tab">
                         <p class="tab-title active-title" onclick="opentab('skills')">Skills</p>
                         <p class="tab-title" onclick="opentab('education')">Education</p>
@@ -54,7 +58,7 @@
                             <li><span>Web Development</span><br>
                                 <span>Web Interface.</span>
                             </li>
-                            <li><span>Editing</span><br>Video Editing/Photo Editing.</li>
+                            <li><span>Editor</span><br>Video Editor/Photo Editor.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -69,18 +73,59 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Wipro</span><br>Working as Developer I</li>
-
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <!-- --------------About End--------------- -->
 
+    <!-- --------------Services Start--------------- -->
 
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, est?Lorem ipsum dolor sit arem
+                        ipsum
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-scissors"></i>
+                    <h2>Video Editor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, est?Lorem ipsum dolor sit amet
+                        consectetur
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, est?Lorem ipsum dolor sit amet</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Services End--------------- -->
+
+
+
+
+
+
+
+
+    <footer>
+        <a href="#home">Back to Home</a>
+    </footer>
     <script src="./script.js"></script>
 
 </body>
