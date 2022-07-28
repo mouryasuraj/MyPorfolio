@@ -26,6 +26,14 @@ header {
 
 .container {
     padding: 10px 10%;
+
+}
+.sub-title{
+    position: relative;
+    cursor: pointer;
+    color: #ff6565;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 .container nav {
@@ -111,7 +119,8 @@ header {
     transition: 0.5s;
     cursor: pointer;
 }
-.row .about-col-1 img:hover{
+
+.row .about-col-1 img:hover {
     transform: scale(1.02);
 }
 
@@ -190,13 +199,14 @@ header {
 
 /* -------------------Service Start----------------------- */
 
-#services .services-list{
+#services .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 40px;
 }
-#services .services-list div{
+
+#services .services-list div {
     background-color: rgb(50, 50, 50);
     padding: 30px;
     border-radius: 10px;
@@ -204,45 +214,44 @@ header {
     cursor: pointer;
     transition: 0.5s;
 }
-#services .services-list div:hover{
-    background-color: #000000;
-    transform: scale(1.03);
+
+#services .services-list div:hover {
+    background-color: #483037;
+    /* background-color: #ff004f; */
+    transform: translateY(-20px);
 }
-#services .services-list div i{
+
+#services .services-list div i {
     font-size: 45px;
     color: #9d9d9d;
 }
-#services .services-list div h2{
+
+#services .services-list div h2 {
     font-size: 25px;
     margin-top: 20px;
 }
-#services .services-list div p{
+
+#services .services-list div p {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
-#services .services-list div a{
+
+#services .services-list div a {
     text-decoration: none;
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
-#services .container h1{
-    position: relative;
-    cursor: pointer;
-    color: #ff6565;
-    font-size: 50px;
-    font-weight: 800;
-}
-
 
 
 
 /* -------------------Services End----------------------- */
 
-footer{
+footer {
     padding: 10px 10%;
 }
-footer a{
+
+footer a {
     border: 1px solid rgb(81, 80, 80);
     color: black;
     background-color: gray;
@@ -253,3 +262,81 @@ footer a{
     border-radius: 3px;
     text-decoration: none;
 }
+
+/* -------------------Portfolio Start----------------------- */
+#portfolio{
+    padding: 40px 0;
+}
+
+#portfolio .work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:40px;
+    margin-top: 40px;
+}
+.work-list .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.work-list .work img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+.work-list .work:hover img{
+    transform: scale(1.1);
+}
+
+.work-list .work-detail{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #c7161f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height .5s;
+}
+.work:hover .work-detail{
+    height: 100%;
+}
+
+.work-list .work-detail h3{
+    font-size:28px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.work-list .work-detail p{
+    font-size:16px;
+    margin-top: 18px;
+}
+.work-list .work-detail a{
+    margin-top: 30px;
+    font-size:25px;
+    font-weight: 900;
+    color: #c7161f;
+    background-color: #fff;border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s
+}
+.work-list .work-detail a:hover{
+    background-color: #f82f2f;
+    color: white;
+}
+
+
+
+/* -------------------Portfolio End----------------------- */
