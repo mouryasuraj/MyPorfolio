@@ -20,7 +20,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
 }
 
@@ -247,22 +247,6 @@ header {
 
 /* -------------------Services End----------------------- */
 
-footer {
-    padding: 10px 10%;
-}
-
-footer a {
-    border: 1px solid rgb(81, 80, 80);
-    color: black;
-    background-color: gray;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 8px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
 /* -------------------Portfolio Start----------------------- */
 #portfolio{
     padding: 40px 0;
@@ -323,7 +307,8 @@ footer a {
     font-size:25px;
     font-weight: 900;
     color: #c7161f;
-    background-color: #fff;border-radius: 50%;
+    background-color: #fff;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -336,7 +321,52 @@ footer a {
     background-color: #f82f2f;
     color: white;
 }
-
-
+.btn{
+    border: 1px solid #080808;
+    width: fit-content;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    margin: 20px auto ;
+    text-decoration: none;
+    color: #ff6565;
+    cursor: pointer;
+    position: relative;
+    
+}
+.btn::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #ff6565;
+    transition: all .5s;
+}
+.btn:hover::after{
+    width: 100%;
+}
 
 /* -------------------Portfolio End----------------------- */
+#hidden-work1, #hidden-work2{
+    display: none;
+}
+
+
+
+footer {
+    padding: 10px 10%;
+}
+
+footer a {
+    border: 1px solid rgb(81, 80, 80);
+    color: black;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
