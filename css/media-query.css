@@ -19,7 +19,7 @@
         top: 0px;
         right: -200px;
         width: 150px;
-        height: 55vh;
+        height: 45vh;
         padding-top: 60px;
         z-index: 2;
         transition: right .5s;
@@ -43,7 +43,9 @@
     header {
         height: 50vh;
     }
-
+    .header-txt{
+        margin-top: 50px;
+    }
     .header-txt h1 {
         font-size: 30px;
         margin-top: 30px;
