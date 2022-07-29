@@ -1,5 +1,5 @@
 
-
+// ---------------------About Section Sart-----------------------
 var tabTitles = document.getElementsByClassName("tab-title");
 var tabContents = document.getElementsByClassName("tab-contents");
 
@@ -13,6 +13,10 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-title")
     document.getElementById(tabname).classList.add("active-tab")
 }
+
+
+// ---------------------About Section End-----------------------
+// ---------------------Portfolio Section start-----------------------
 
 var hiddenwork1 = document.getElementById("hidden-work1");
 var hiddenwork2 = document.getElementById("hidden-work2");
@@ -29,4 +33,23 @@ function showmore() {
         button.innerHTML = "Show less";
     }
 }
+// ---------------------Portfolio Section End-----------------------
+
+
+// ---------------------Media Query Section Start-----------------------
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "-30px";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+
+
+// ---------------------Media Query Section End-----------------------
+
 

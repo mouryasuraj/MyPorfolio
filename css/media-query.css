@@ -1,0 +1,135 @@
+@media only screen and (max-width:600px) {
+    header {
+        background-image: none;
+    }
+
+    .container nav h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 27px;
+    }
+
+    nav ul {
+        background-color: #f03232;
+        position: fixed;
+        border-bottom-left-radius: 10px;
+        top: 0px;
+        right: -200px;
+        width: 150px;
+        height: 55vh;
+        padding-top: 60px;
+        z-index: 2;
+        transition: right .5s;
+    }
+
+    nav ul li {
+        display: block;
+        /* margin: 30px; */
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 22px;
+    }
+
+    .container nav ul li a::after {
+        background-color: #fff;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    .header-txt h1 {
+        font-size: 30px;
+        margin-top: 30px;
+
+    }
+
+    .header-txt p {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .row .about-col-2 h1,
+    .sub-title {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .row .about-col-1 {
+        margin-bottom: 40px;
+    }
+
+    .row .about-col-2,
+    .row .about-col-1 {
+        flex-basis: 100%;
+    }
+
+    .col-2-tab .tab-title {
+        font-size: 13px;
+    }
+
+    .row .about-col-2 .abt-me {
+        font-size: 16px;
+    }
+
+    .tab-contents {
+        border: 3px solid rgb(195, 251, 218);
+        border-radius: 5px;
+        padding: 3px 10px;
+        font-size: 14px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-left .flex span {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    .contact-left .flex p {
+        font-size: 14px;
+    }
+    .contact-left .social-link{
+        margin-bottom: 50px;
+    }
+    .contact-left .social-link a{
+        padding: 3px 8px;
+        font-size: 23px;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+    .btn2{
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+    .btn3{
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .contact-right{
+        margin-top: 40px;
+        margin-left: -10px;
+
+    }
+    .btn {
+        font-size: 20px;
+    }
+    .contact-right form input, form textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .copyright{
+        padding: 10px;
+        font-size: 12px;
+        width: fit-content;
+    }
+    #msg{
+        font-size: 14px;
+    }
+}
